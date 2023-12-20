@@ -1,0 +1,17 @@
+from math import *
+print("please enter three numbers:")
+def equation():
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    d = pow(b, 2) - 4 * a * c
+    if d > 0:
+        j_1 = (b - sqrt(d)) / 2 * a
+        j_2 = (b + sqrt(d)) / 2 * a
+        print("there are two solutions to this equation:", j_1, j_2)
+    elif d == 0:
+        g = -b / 2 * a
+        print("there is one solution to this equation:", g)
+    elif d < 0:
+        print("there are no solutions to this equation in |R")
+equation()
